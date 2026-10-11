@@ -2408,6 +2408,27 @@ Coding
 
 </details>
 
+## [retie](https://github.com/rsh1k/retie)
+retie: a terminal coding agent that plans the undo before it acts
+
+<details>
+
+### Category
+Coding agents, Build your own
+
+### Description
+
+- **Consequence-aware gate**: actions are classified by reversibility, not tool name — a sandboxed, network-cut shell runs unprompted because its workspace snapshot is a one-operation undo; an unsandboxed one stops for a human.
+- **Write inspection on a second axis**: removed auth checks, dropped certificate verification, and hardcoded secrets are flagged even though the edit itself is reversible.
+- **Tamper-evident ledger**: every decision, including refusals, is hash-chained before the action executes and verifiable from a separate process.
+- **Runs on hosted open models**: Ollama Cloud by default (OpenAI-compatible endpoint), Anthropic optional; a tiered model ladder starts cheap and escalates only on failure.
+- **Undo and replay**: `plane.undo(action_id)`, `undo_all()` for the session's whole delegation, and `retie replay --markdown` for a shareable session record.
+
+### Links
+- [GitHub](https://github.com/rsh1k/retie)
+- [PyPI](https://pypi.org/project/retie/)
+</details>
+
 ## [Self-operating computer](https://www.hyperwriteai.com/self-operating-computer)
 Let multimodal models operate a computer
 
